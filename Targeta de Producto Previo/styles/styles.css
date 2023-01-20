@@ -2,14 +2,14 @@
     background: #f3c6c6;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .tarjeta{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 90vh;
 }
 
 .imagen{
@@ -35,6 +35,8 @@
     flex-direction: column;
 }
 .descripcion *{
+    width: auto;
+    height: auto;
     background-color: rgb(238, 247, 250);
     margin: 10px 38px;
 }
@@ -86,15 +88,14 @@ p{
 
 /*  600px max de width */
 @media (max-width: 600px){
-
+    
     .tarjeta{
         flex-direction: column;
-        height: 100vw;
-        margin-top: auto;
     }
 
     .imagen{
         border-radius: 15px 15px 0 0;
+        height: 200px;
     
         background: url(../images/image-product-mobile.jpg);
         background-repeat: no-repeat;
