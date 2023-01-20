@@ -1,0 +1,29 @@
+*{
+    background: rgb(173, 231, 241);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(88, 32, 32);
+}
+
+button{
+    background: rgb(67, 67, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+button:hover{
+    background: rgb(101, 20, 177);
+    border: 2px solid black;
+}
+
+a{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
