@@ -1,15 +1,28 @@
+:root{
+    --blanco: white;
+    --negro: black;
+}
+
 *{
     background: #f3c6c6;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: 100vh;
 }
 
 .tarjeta{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .imagen{
@@ -37,7 +50,7 @@
 .descripcion *{
     width: auto;
     height: auto;
-    background-color: rgb(238, 247, 250);
+    background-color: #eef7fa;
     margin: 10px 38px;
 }
 h3{
@@ -74,21 +87,52 @@ p{
     background: rgb(61, 129, 104);
     color: white;
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
     
     border: none;
     border-radius: 10px;
 
-    padding: 15px;
-    margin: 10px 38px;
+    display: flex;
+    align-items: center;
+
+    padding: 10px 20px;
+    
+}.btn_precio:hover {
+    background: #eef7fa;
+    cursor: pointer;
+    border: 3px solid #173128;
+    color: #173128;
+    padding: 7px 20px;
+
+}.btn_precio:hover .carrito{
+    filter: brightness(0) saturate(100%) invert(12%) sepia(48%) saturate(562%) hue-rotate(108deg) brightness(94%) contrast(87%);
 }
 
-.btn_precio:hover{
-    background: rgb(23, 49, 40);
+.carrito{
+    background: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 1vw;
 }
+
+
+footer{
+    text-align: center;
+    font-size: x-small;
+}
+
+
 
 /*  600px max de width */
 @media (max-width: 600px){
     
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .tarjeta{
         flex-direction: column;
     }
